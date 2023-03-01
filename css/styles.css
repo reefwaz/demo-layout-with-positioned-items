@@ -2,3 +2,59 @@ body {
     background-color: #192f5e;
     font-family: sans-serif;
 }
+
+.inner-container {
+    max-width: 66.25rem;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 3.125rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+section p {
+    font-size: 1.75rem;
+    color: #d5e294;
+    border-bottom: 2px solid #d5e294;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+section {
+    padding: 3.125rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.gallery {
+    display: flex;
+    /* flex-direction: ; */
+    flex-flow: column nowrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+section span {
+    background-color: #ff12ff;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    position: absolute;
+    /* top, right, left, bottom valuse to position it */
+    right: -10px;
+    top: -20px;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+@media screen and (min-width: 66.25rem) {
+    .gallery {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
